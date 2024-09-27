@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.background-img {
+    z-index: 0;
+    position: absolute;
+    top: 0; right: 0; left: 0;
+    width: 100%;
+    height: 230px;
+
+}
+
+section .container {
+    padding: 2rem;
+    width: 43%;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+}
+
+section .container .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section .container .title svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+section .container .title h2 {
+    font-size: 2.5rem;
+}
+
+section .container .faqs .questions {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+section .container .faqs .questions .question:hover {
+    color: rgb(211, 36, 211);
+}
+
+section .container .faqs .questions .question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+section .container .faqs .questions .question svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+section .container .faqs .questions h4 {
+    margin-bottom: 1.5rem;
+}
+
+section .container .faqs .answer {
+    max-height: 0;
+    overflow: hidden;
+    color: hsl(292, 16%, 49%);
+}
+
+section .container .faqs .minus {
+    display: none;
+}
+
+section .container .faqs.active .answer {
+   max-height: 300px;
+} 
+
+section .container .faqs.active .plus {
+    display: none;
+}
+
+section .container .faqs.active .minus {
+    display: inline;
+}
+
+@media only screen and (max-width:1024px) {
+    
+    section .container .faqs .questions .question {
+        font-size: 0.7rem;
+    }
+
+    section .container .faqs.active .answer {
+        font-size: 0.6rem;
+        
+     } 
+}
+
+@media only screen and (max-width:768px) {
+
+    section .container {
+        width: 55%;
+    }
+
+    section .container .faqs .questions .question {
+        font-size: 0.7rem;
+    }
+
+    section .container .faqs .questions .question svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    section .container .faqs.active .answer {
+        font-size: 0.6rem;
+        
+    } 
+}
+
+@media only screen and (max-width:426px) {
+   
+    section .container {
+        width: 90%;
+        top: 130px;
+    }
+
+    section .container .title svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    section .container .title h2 {
+        font-size: 1.5rem;
+    }
+
+    section .container .faqs .questions .question {
+        font-size: 0.6rem;
+    }
+
+    section .container .faqs .questions .question svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    section .container .faqs.active .answer {
+        font-size: 0.6rem;
+        
+    } 
+}
+
+@media only screen and (max-width:376px) {
+   
+    section .container {
+        width: 90%;
+        top: 130px;
+    }
+
+    section .container .title svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    section .container .title h2 {
+        font-size: 1.5rem;
+    }
+
+    section .container .faqs .questions .question {
+        font-size: 0.8rem;
+    }
+
+    section .container .faqs .questions .question .icons {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    section .container .faqs.active .answer {
+        font-size: 0.7rem;
+        
+    } 
+}
+
+
